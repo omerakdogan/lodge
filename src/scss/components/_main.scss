@@ -1,0 +1,23 @@
+// Main
+
+@use '../base/settings' as *;
+@use '../utilities/functions' as *;
+
+main {
+    padding: $section-padding;
+    min-height: calc(100vh - 264px);
+
+
+    @media (min-width: em(600)){
+        
+        section:not(.page-not-found-section) {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            > h2 {
+                width: 100%;
+            }
+        }
+    }
+
+}

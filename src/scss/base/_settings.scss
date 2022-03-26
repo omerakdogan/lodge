@@ -1,0 +1,16 @@
+// App Style Settings
+
+@use '../utilities/functions' as *;
+
+// Colors
+$dark: black;
+$light: #fcfcfc;
+$yellow: #D39E35;
+$grey: #e1e1e1;
+
+// Type
+$bodyFont: 'BodoniMT', sans-serif;
+$headingFont: 'Bebas Neue', sans-serif;
+
+// Layout
+$section-padding: em(16) em(20);

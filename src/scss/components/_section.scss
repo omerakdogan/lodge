@@ -1,0 +1,9 @@
+@use '../base/variables' as *;
+@use '../base/settings' as *;
+@use '../utilities/functions' as *;
+@use '../utilities/mixins' as *;
+
+.about-page,
+.favs-page {
+    padding: em(20);   
+}

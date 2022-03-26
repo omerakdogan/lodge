@@ -1,0 +1,45 @@
+// Header
+
+@use '../base/settings' as *;
+@use '../utilities/functions' as *;
+@use '../utilities/mixins' as *;
+@use '../base/variables' as *;
+
+
+header {
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+  
+    .headericon {
+        display: flex;
+        float: left;
+
+        img{
+            width: 300px;
+            height: auto;
+            align-self: center;
+        }
+    }
+
+    @include mq($tablet){
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: em(12);
+        h1 {
+            margin: 0;
+            text-align: left;
+        }
+    }
+
+    @include mq($desktopWide){
+        margin: em(20);
+        h1 {
+            font-size: em(48);
+        }
+    }
+}

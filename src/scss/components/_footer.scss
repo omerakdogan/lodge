@@ -1,0 +1,17 @@
+// Footer
+
+@use '../base/settings' as *;
+@use '../utilities/mixins' as *;
+
+footer {
+    padding: $section-padding;
+    color: $grey;
+    background-color: $yellow;
+    display: flex;
+    justify-content: center;
+
+    p {
+        @include flatten;
+        text-align: center;
+    }
+}

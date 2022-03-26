@@ -1,0 +1,41 @@
+@use '../base/variables' as *;
+@use '../base/settings' as *;
+@use '../utilities/functions' as *;
+@use '../utilities/mixins' as *;
+
+
+
+nav {
+    ul {
+        margin: 20px;
+        padding: 0;
+        list-style: none;
+        display: flex;
+    }
+    li {
+        flex: 1;
+        margin-right: em(4);
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+    
+}
+
+.nav-sort {
+    a {
+        display: block;
+        color: $grey;
+        text-align: center;
+        line-height: em(40);
+        text-decoration: none;
+        border-radius: em(24);
+        &:hover {
+            color: $yellow;
+        }
+        &:active, &:focus {
+                color: $grey;
+                background-color: $yellow;
+        }
+    }
+}

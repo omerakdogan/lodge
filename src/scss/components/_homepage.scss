@@ -1,0 +1,55 @@
+// Wrapper
+
+@use '../base/settings' as *;
+@use '../utilities/mixins' as *;
+@use '../utilities/functions' as *;
+@use '../base/variables' as *;
+
+.home-page {
+
+    .nav-bar {
+        display: flex;
+        align-items: center;
+        padding: 0 20px;
+    }
+
+    .headersearch {
+        width: 97%;
+        margin: em(16);
+        padding: 10px 30px;
+        background-color: #c2b9aa;
+        border: 2px solid rgba(var(--userscrollTrack1), 1);
+        box-shadow: 0px 0px 16px $yellow;
+        border-radius: em(24);
+        color: $textColor;
+        font-size: 1.1rem;     
+    }
+
+    .headersearch:focus {
+        outline: 0;
+    }
+
+    .header_form_wrapper {
+        position: relative;
+
+        .reset-button {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 24px;
+        }
+    }
+    @include mc();
+
+    @include mq($desktopWide){
+        margin: em(8) auto;
+    }
+    .reset-button{
+        color: $textColor;
+        background: $yellow;
+        border: $textColor;
+        padding: 5px;
+        border-radius: 24px;
+
+    }
+}
