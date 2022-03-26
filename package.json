@@ -1,6 +1,6 @@
 {
   "name": "movie-owl",
-  "homepage": "/movie-owl",
+  "homepage": "/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
